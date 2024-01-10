@@ -67,3 +67,21 @@ const typed = new Typed('.multiple-text', {
 
 
 /** formulário funcional */
+
+class FormSubmit {
+    constructor(settings) {
+        this.settings = settings;
+        this.form = document.querySelector(settings.form);
+        this.formButton = document.querySelector(settings.button);
+        if (this.form) {
+
+        }
+    }
+    displaySucess() {
+        this.form.innerHTML = this.settings.sucess;
+    }
+
+    displayError() {
+        this.form.innerHTML = this.settings.error;
+    }
+}

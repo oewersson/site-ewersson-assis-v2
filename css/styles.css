@@ -340,6 +340,18 @@ span {
     background-color: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.3125rem var(--main-color);
+
 }
 
 .contato form .input-box input {
@@ -354,6 +366,11 @@ span {
     margin-top: 2rem;
     cursor: pointer;
     text-align: center;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: #555b69;
 }
 
 .footer {
